@@ -1,0 +1,12 @@
+# KDE Config File  
+[Desktop Entry]
+Type=Application
+Exec=mazlarm -caption "%c" %i %m  
+Icon=mazlarm.png
+MiniIcon=mazlarm.png
+DocPath=mazlarm/index.html
+Comment=
+Comment[de]=
+Terminal=0
+Name=MAZlarm
+Name[de]=MAZlarm
