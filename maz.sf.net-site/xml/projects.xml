@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="koi8-r"?>
+
+<projects	desc   = ""
+		descRU = "">
+
+	<project	name   = "MADI Emulator"
+			nameRU = "МАДИ Эмулятор"
+			desc   = "Little gfx demo."
+			descRU = "Маленькая графическая демка."
+			url  = "madi_emulator"
+	/>
+
+	<project	name   = "MADI Emulator 2"
+			nameRU = "МАДИ Эмулятор 2"
+			desc   = "Cool gfx demo, written in pascal."
+			descRU = "Прикольная графическая демка. В этот раз написана на паскале."
+			url  = "madi_emulator2"
+	/>
+
+	<project	name   = "MAYHEM"
+			nameRU = "MAYHEM"
+			desc   = "The good old classic game ;) Just great for multiplayer battles on one computer :)"
+			descRU = "Старая добрая классическая игра. В нее очень здорово устраивать многопользовательские баталии на одном компьютере."
+			url  = "mayhem"
+	/>
+
+	<project	name   = "MAZlarm"
+			nameRU = "MAZlarm"
+			desc   = "Alarm clock for KDE"
+			descRU = "Будильник, работающий под KDE."
+			url  = "mazlarm"
+	/>
+
+	<project
+			name   = "MAZsoft Site"
+			nameRU = "Сайт MAZsoft"
+			desc   = "The site, you're currently visiting."
+			descRU = "Сайт, который вы сейчас посещаете :)"
+			url = "site"
+	/>
+
+	<project	name   = "QGrabber"
+			nameRU = "QGrabber"
+			desc   = "Grabber-compatible tool written in C++ with Qt"
+			descRU = "grabber-совместимая программа, целиком написанная на Си++, с использованием Qt."
+			url  = "qgrabber"
+	/>
+
+	<project	name   = "VectEdit"
+			nameRU = "VectEdit"
+			desc   = "Vector graphics editor."
+			descRU = "Векторный графический редактор."
+			url  = "vectedit"
+	/>
+</projects>

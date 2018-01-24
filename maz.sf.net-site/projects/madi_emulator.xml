@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="koi8-r"?>
+
+<project	name   = "MADI Emulator"
+		nameRU = "МАДИ Эмулятор">
+
+	<description	text = "This little demo is written within six hours simply to test my skills. And i spent a couple more to improve some aspects of program. There is also a sequel, MADI Emulator - 2 :-)"
+			textRU = "Эта маленькая демка была написана за шесть часов, просто чтобы потренироваться. Потом я потратил еще пару часов, чтобы улучшить пару аспектов программы. Кстати, уже существует секвел -- МАДИ Эмулятор - 2 :-)"
+	/>
+
+	<screenshots>
+		<picture	desc     = "MADI, advertisement and lots of wandering students :-)"
+				descRU   = "МАДИ, реклама и куча скитающихся студентов :-)"
+				filename = "images/screenshots/madi_emulator/000.png"
+				thumb    = "images/screenshots/madi_emulator/000_small.png"
+		/>
+		<picture	desc     = "Night, stars, MADI building ;-)"
+				descRU   = "Ночь, звёзды и здание МАДИ :-)"
+				filename = "images/screenshots/madi_emulator/001.png"
+				thumb    = "images/screenshots/madi_emulator/001_small.png"
+		/>
+	</screenshots>
+
+	<files version = "1.0">
+		<file	name = "madi_data_100.zip"
+			url  = "http://prdownloads.sourceforge.net/maz/madi_data_100.zip"
+			desc   = "Main datafiles"
+			descRU = "Основные датафайлы"
+		/>
+		<file	name = "madi_dos_100.zip"
+			url  = "http://prdownloads.sourceforge.net/maz/madi_dos_100.zip"
+			desc   = "DOS executable"
+			descRU = "Исполняемый файл DOS"
+		/>
+		<file	name = "madi_src_100.zip"
+			url  = "http://prdownloads.sourceforge.net/maz/madi_src_100.zip"
+			desc   = "Source Code"
+			descRU = "Исходники"
+		/>
+	</files>
+</project>

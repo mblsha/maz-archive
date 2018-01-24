@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="koi8-r"?>
+
+<!--
+	<a href="		">		</a>
+	&lt;a href=&quot;	&quot;&gt;	&lt;/a&gt;
+-->
+
+<news	desc   = "Welcome to MAZsoft site! Hope you'll find here something interesting to you."
+	descRU = "Добро пожаловать на сайт MAZsoft! Надеюсь, что тут вы найдете что-нибудь интересное для вас.">
+
+	<item	date    = "12 june 2002"
+		dateRU  = "12 июня 2002"
+		title   = "Major site update"
+		titleRU = "Большое обновление сайта">
+
+		<event	text   = "First of all, I must notice, that the whole site structure has been reconstructed. It is now using powerful PHP scripting language. Please, send me your opinions about it."
+			textRU = "Прежде всего, я должен заметить, что вся структура сайта была полностью переработана. Сейчас сайт работает с помощью мошного скриптового языка PHP. Пожалуйста, шлите мне свои мнения."/>
+
+		<event	text   = "Russian version of the site is now available."
+			textRU = "Наконец-то стала доступна русская версия сайта."/>
+
+		<event	text   = "Released &lt;a href=&quot;project.php?file=site&quot;&gt;sources&lt;/a&gt; of the site."
+			textRU = "Стали доступными &lt;a href=&quot;project.php?file=site&amp;lang=RU&quot;&gt;исходники&lt;/a&gt; сайта."/>
+
+		<event	text   = "Updated &lt;a href=&quot;project.php?file=qgrabber&quot;&gt;QGrabber&lt;/a&gt; to version 0.0.4."
+			textRU = "&lt;a href=&quot;project.php?file=qgrabber&amp;lang=RU&quot;&gt;QGrabber&lt;/a&gt; обновился до версии 0.0.4."/>
+
+		<event  text   = "Updated &lt;a href=&quot;project.php?file=mazlarm&quot;&gt;MAZlarm&lt;/a&gt; to version 0.0.2."
+			textRU = "&lt;a href=&quot;project.php?file=mazlarm&amp;lang=RU&quot;&gt;MAZlarm&lt;/a&gt; обновился до версии 0.0.2."/>
+
+		<event	text   = "Finally, I have the time to upload &lt;a href=&quot;project.php?file=madi_emulator2&quot;&gt;MADI Emulator 2&lt;/a&gt; to server."
+			textRU = "В конце концов, у меня появилось время, чтобы выложить &lt;a href=&quot;project.php?file=madi_emulator2&amp;lang=RU&quot;&gt;МАДИ Эмулятор 2&lt;/a&gt; на сервер."/>
+
+		<event	text   = "And now there is &lt;a href=&quot;project.php?file=vectedit&quot;&gt;VectEdit&lt;/a&gt;."
+			textRU = "А еще вы можете найти здесь &lt;a href=&quot;project.php?file=vectedit&amp;lang=RU&quot;&gt;VectEdit&lt;/a&gt;."/>
+
+		<event	text   = "Some project pages were corrected."
+			textRU = "Некоторые страницы проектов были исправлены"/>
+	</item>
+
+	<item	date    = "23 april 2002"
+		dateRU  = "23 апреля 2002"
+		title   = "New QGrabber release"
+		titleRU = "Вышла новая версия QGrabber'а">
+
+		<event 	text   = "Updated &lt;a href=&quot;project.php?file=qgrabber&quot;&gt;QGrabber&lt;/a&gt;. Now it works on Windows too!"
+			textRU = "Обновился &lt;a href=&quot;project.php?file=qgrabber&amp;lang=RU&quot;&gt;QGrabber&lt;/a&gt;. Сейчас он работает и под Windows!"/>
+	</item>
+
+	<item	date    = "15 april 2002"
+		dateRU  = "15 апреля 2002"
+		title   = "New projects released"
+		titleRU = "Выложены новые проекты">
+
+		<event 	text   = "Added &lt;a href=&quot;project.php?file=mazlarm&quot;&gt;MAZlarm&lt;/a&gt; and &lt;a href=&quot;project.php?file=qgrabber&quot;&gt;QGrabber&lt;/a&gt;"
+			textRU = "Были добавлены &lt;a href=&quot;project.php?file=mazlarm&amp;lang=RU&quot;&gt;MAZlarm&lt;/a&gt; (будильник) и &lt;a href=&quot;project.php?file=qgrabber&amp;lang=RU&quot;&gt;QGrabber&lt;/a&gt; (просто хорошая прога)"/>
+	</item>
+
+	<item	date    = "23 february 2002"
+		dateRU  = "23 февраля 2002"
+		title   = "ATED Update"
+		titleRU = "Обновление ATED">
+
+		<event	text   = "Updated ATED to version 0.3.1. &lt;a href=&quot;http://ated.sf.net&quot;&gt;Chech this one out!&lt;/a&gt;"
+			textRU = "ATED обновился до версии 0.3.1. &lt;a href=&quot;http://ated.sf.net/&amp;lang=RU&quot;&gt;Не упустите его!&lt;/a&gt;"/>
+	</item>
+
+	<item	date    = "20 february 2002"
+		dateRU  = "20 февраля 2002"
+		title   = "Just created MAZsoft site!"
+		titleRU = "Только что был создан сайт MAZsoft!">
+
+		<event	text   = "The site is now finally up :) Don't forget to check out the good old &lt;a href=&quot;project.php?file=mayhem&quot;&gt;MAYHEM&lt;/a&gt; and &lt;a href=&quot;project.php?file=madi_emulator&quot;&gt;MADI Emulator&lt;/a&gt;."
+			textRU = "Сайт теперь работает. Радуйтесь :) Не забудьте проверить старого доброго дедушку &lt;a href=&quot;project.php?file=mayhem&amp;lang=RU&quot;&gt;MAYHEM'а&lt;/a&gt; и &lt;a href=&quot;project.php?file=madi_emulator&amp;lang=RU&quot;&gt;Эмулятор МАДИ&lt;/a&gt;."/>
+	</item>
+</news>

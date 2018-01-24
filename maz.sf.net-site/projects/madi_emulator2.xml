@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="koi8-r"?>
+
+<project	name   = "MADI Emulator 2"
+		nameRU = "МАДИ Эмулятор 2">
+
+	<description	text = "MADI Emulator was completely rewritten.
+Now it uses powerful vector rasterizer and interpolator engine, written completely in pascal.
+I must say 'thanks' to Elias Pschernig (and his 'Peace Invaders'), who gave me an impulse to write all this."
+			textRU = "Эмулятор МАДИ был полностью переписан.
+Сейчас он использует мощную технологию векторного растеризатора и интерполирующего движка, полностью написанного на паскале.
+Я должен сказать 'спасибо' Элиасу Псчернигу (и его 'Peace Invaders'), который дал мне импульс для написания всего этого."
+	/>
+
+	<screenshots>
+		<picture	desc     = ""
+				filename = "images/screenshots/madi_emulator2/000.png"
+				thumb    = "images/screenshots/madi_emulator2/000_small.png"
+		/>
+		<picture	desc     = ""
+				filename = "images/screenshots/madi_emulator2/001.png"
+				thumb    = "images/screenshots/madi_emulator2/001_small.png"
+		/>
+	</screenshots>
+
+	<files version = "1.0.0">
+		<file	name = "madi_emulator2-1.0.0.zip"
+			url  = "http://prdownloads.sourceforge.net/maz/madi_emulator2-1.0.0.zip"
+			desc   = "Data, DOS executable and sources."
+			descRU = "Графика, Исполняемый файл DOS и исходники."
+		/>
+	</files>
+</project>

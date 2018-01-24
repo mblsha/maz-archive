@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="koi8-r"?>
+
+<project	name   = "MAZlarm"
+		nameRU = "MAZlarm">
+
+	<description	text   = "MAZlarm is a small alarm clock made specially for KDE."
+			textRU = "MAZlarm -- это маленький будильник, сделанный специально для KDE"
+	/>
+
+	<features>
+		<feature	text   = "Silently sits in system tray"
+				textRU = "Все время тихонько сидит в трее"/>
+		<feature	text   = "Have ability to play various music files as alarms (with the help of FMOD)"
+				textRU = "Имеет способность к проигрыванию музыкальных файлов в качестве сигналов будильника (с помощью FMOD)"/>
+	</features>
+
+	<changes>
+		<version num = "0.0.2">
+			<change	text   = "Now is uses Qt 3.0"
+				textRU = "Теперь использует Qt 3.0"/>
+			<change	text   = "'File is application' checkbox is now working"
+				textRU = "Опция 'File is application' теперь работает"/>
+			<change	text   = "Added FMOD configuration tab"
+				textRU = "В опциях добавлена страничка по конфигурированию FMOD"/>
+		</version>
+		<version num = "0.0.1">
+			<change	text   = "Original release"
+				textRU = "Первый выпуск"/>
+		</version>
+	</changes>
+
+	<screenshots>
+		<picture	desc     = "MAZlarm in tray"
+				descRU   = "MAZlarm в трее"
+				filename = "images/screenshots/mazlarm/000.png"
+				thumb    = "images/screenshots/mazlarm/000_small.png"
+		/>
+		<picture	desc     = "Alarm configuration settings"
+				descRU   = "Настройки сигнала"
+				filename = "images/screenshots/mazlarm/001.png"
+				thumb    = "images/screenshots/mazlarm/001_small.png"
+		/>
+		<picture	desc     = "Base configuration settings"
+				descRU   = "Основные параметры настройки"
+				filename = "images/screenshots/mazlarm/002.png"
+				thumb    = "images/screenshots/mazlarm/002_small.png"
+		/>
+		<picture	desc     = "FMOD configuration settings"
+				descRU   = "Параметры настройки FMOD"
+				filename = "images/screenshots/mazlarm/003.png"
+				thumb    = "images/screenshots/mazlarm/003_small.png"
+		/>
+		<picture	desc     = "MAZlarm in action"
+				descRU   = "MAZlarm в действии"
+				filename = "images/screenshots/mazlarm/004.png"
+				thumb    = "images/screenshots/mazlarm/004_small.png"
+		/>
+	</screenshots>
+
+	<files version = "0.0.2">
+		<file	name = "mazlarm-0.0.2.tar.gz"
+			url  = "http://prdownloads.sourceforge.net/maz/mazlarm-0.0.2.tar.gz"
+			desc   = "Linux source and executable"
+			descRU = "Исполняемый файл и исходники для Линукса"
+		/>
+		<file	name = "mazlarm-0.0.1.tar.gz"
+			url  = "http://prdownloads.sourceforge.net/maz/mazlarm-0.0.1.tar.gz"
+			desc   = "Linux source and executable"
+			descRU = "Исполняемый файл и исходники для Линукса"
+		/>
+	</files>
+</project>

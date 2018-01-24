@@ -1,0 +1,118 @@
+<?php
+	switch ($lang) {
+		case "RU":
+			$news        = "Новости";
+			$about       = "О нас";
+			$projectPage = "Страница проекта";
+			$projects    = "Проекты";
+			$other       = "Остальные";
+			$support     = "Поддержка";
+			$hostedBy    = "Хостинг";
+
+			$codepage = "koi8-r";
+			break;
+		default:
+			$news        = "News";
+			$about       = "About us";
+			$projectPage = "Project page";
+			$projects    = "Projects";
+			$other       = "Other";
+			$support     = "Support";
+			$hostedBy    = "Hosted by";
+
+			$codepage = "iso-8859-1";
+	}
+
+	$bgcolor1 = "#DDDDFF";
+	$bgcolor2 = "#CCCCFF";
+	$bgcolor3 = "#CCCCCC";
+
+	if ($file != "")
+		$file = "file=$file&";
+	if ($display != "")
+		$displ = "display=$display&";
+
+	// setcookie ("lang", "$lang", time() + (3600*24*365));
+?>
+<?php print "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<title><?php print "MAZsoft - $pageTitle" ?></title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=<?php print "$codepage" ?>" />
+</head>
+<body bgcolor="#FFFFFF">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td rowspan="2" width="200"><img src="images/logo.png" alt="MAZsoft Logo" /></td>
+		<td width="15" rowspan="2"></td>
+	</tr>
+	<tr>
+		<td>
+			<div align="center" class="header">
+				<?php print "$pageTitle\n" ?>
+			</div>
+		</td>
+	</tr>
+</table>
+
+<p><table width="" border="0" cellspacing="0">
+	<tr>
+		<td valign="top" align="center">
+			<table border="0" cellspacing="0" cellpadding="0" bgcolor="#9999CC">
+				<tr valign=TOP>
+					<td height="8"><img src="images/corner_ul.png" width="10" height="10" /></td>
+					<td height="8"></td>
+					<td height="8"><img src="images/corner_ur.png" width="10" height="9" /></td>
+				</tr>
+				<tr valign=TOP>
+					<td></td>
+					<td valign="top"">
+						<div class="menu">
+						<p align="left">
+							<b>MAZsoft</b><br />
+							<a href="/?lang=<?php  print "$lang\">$news" ?></a><br />
+							<a href="about.php?lang=<?php  print "$lang\">$about" ?></a><br />
+							<a href="http://sourceforge.net/projects/maz"><?php print "$projectPage" ?></a>
+						</p>
+						<p align="left">
+							<b><?php print "$projects" ?></b><br />
+							<a href="http://mayhem2.sf.net/?lang=<?php print"$lang" ?>">MAYHEM2</a><br />
+							<a href="http://ated.sf.net/?lang=<?php print"$lang" ?>">ATED</a><br />
+							<a href="projects.php?lang=<?php print "$lang\">$other" ?></a>
+						</p>
+						<p align="left">
+							<b><?php print "$support" ?></b><br />
+							<a href="mailto:mblsha@users.sourceforge.net">E-Mail</a>
+						</p>
+						<p align="center">
+							<a href="?<?php print "$file$displ" ?>lang="><img src="images/uk.png" alt="English"></a>
+							<a href="?<?php print "$file$displ" ?>lang=RU"><img src="images/ru.png" alt="Russian"></a>
+						</p>
+						</div>
+					</td>
+					<td></td>
+				</tr>
+				<tr valign=BOTTOM>
+					<td width="8"><img src="images/corner_bl.png" width="11" height="11" /></td>
+					<td>&nbsp;</td>
+					<td><img src="images/corner_br.png" width="10" height="10" /></td>
+				</tr>
+			</table>
+			<p class="banners">
+				<?php print "$hostedBy" ?><br />
+				<a href="http://sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=46959&amp;size=1" width="88" height="31" border="0" alt="SourceForge.net"></a>
+			</p>
+		</td>
+		<td valign=top width="100%">
+			<table border="0" cellspacing="0" cellpadding="0" bgcolor="#9999CC">
+				<tr>
+					<td height="8" valign="top"><img src="images/corner_ul.png" width="10" height="10" /></td>
+					<td height="8" valign="top" width="100%">&nbsp;</td>
+					<td height="8" valign="top"><img src="images/corner_ur.png" width="10" height="9" /></td>
+				</tr>
+				<tr>
+					<td width="8" valign="top">&nbsp;</td>
+					<td width="100%">
+						<div class="content">

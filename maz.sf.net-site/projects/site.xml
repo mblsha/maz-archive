@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="koi8-r"?>
+
+<project	name = "MAZsoft Site"
+		nameRU = "Сайт MAZsoft">
+
+	<description	text = "If you would like to know, how this site is working, you can do it there."
+
+			textRU = "Если вы хотели узнать, как работает сайт, то вы можете сделать это здесь."
+	/>
+
+	<changes>
+		<version num = "0.0.1">
+			<change	text   = "Beta release"
+				textRU = "Первый бета-выпуск"/>
+		</version>
+	</changes>
+
+	<screenshots>
+		<picture	desc     = "MAZsoft Project view"
+				descRU   = "Просмотр проекта"
+				filename = "images/screenshots/site/000.png"
+				thumb    = "images/screenshots/site/000_small.png"
+		/>
+	</screenshots>
+
+	<files version = "0.0.1">
+		<file	name = "site-0.0.1.tar.gz"
+			url  = "http://prdownloads.sourceforge.net/maz/site-0.0.1.tar.gz"
+			desc   = "Site sources."
+			descRU = "Исходники сайта."
+		/>
+	</files>
+</project>

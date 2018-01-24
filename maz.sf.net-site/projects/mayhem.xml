@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="koi8-r"?>
+
+<project	name   = "MAYHEM"
+		nameRU = "MAYHEM">
+
+	<description	text = "The greatest multiplayer action of past two years in my school :)"
+			textRU = "Величайший мультиплейерный экшен последних двух лет в моей школе :)"
+	/>
+
+	<screenshots>
+		<picture	desc     = "Battle is action"
+				descRU   = "Битва в разгаре"
+				filename = "images/screenshots/mayhem/000.png"
+				thumb    = "images/screenshots/mayhem/000_small.png"
+		/>
+		<picture	desc     = "Blue is defending, Green is attacking"
+				descRU   = "Синий защищается, Зеленый атакует"
+				filename = "images/screenshots/mayhem/001.png"
+				thumb    = "images/screenshots/mayhem/001_small.png"
+		/>
+		<picture	desc     = "Exterminate Red ship!"
+				descRU   = "Уничтожить Красного!"
+				filename = "images/screenshots/mayhem/002.png"
+				thumb    = "images/screenshots/mayhem/002_small.png"
+		/>
+	</screenshots>
+
+	<files version = "1.96">
+		<file	name = "Mayhem196.zip"
+			url  = "http://prdownloads.sourceforge.net/maz/Mayhem196.zip"
+			desc   = "The game."
+			descRU = "Сама Игра."
+		/>
+		<file	name = "Mayhem196_src.zip"
+			url  = "http://prdownloads.sourceforge.net/maz/Mayhem196_src.zip"
+			desc   = "Source code. QuickBasic 7.1 required in order to compile and run."
+			descRU = "Исходники. Необходим QuickBasic 7.1 для компиляции и запуска."
+		/>
+	</files>
+</project>

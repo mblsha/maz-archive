@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="koi8-r"?>
+
+<about>
+	<p	text   =	"MAZsoft -- a group of independent developers. Our goal -- to write programs, that can
+				be useful to someone, and because we just love the process of creating new software."
+		textRU =	"MAZsoft -- сообщество независимых разработчиков. Наша цель -- писать программы которые
+				могут быть кому-либо полезны, а еще потому, что это просто прикольно (вот он -- хакерский
+				менталитет :-). Вступить в наши ряды несложно, достаточно просто обладать свободным
+				временим, и умением делать что-то полезное (например: уметь писать программы,
+				рисовать, поддерживать сайт). Мы всегда рады новым членам :-) Пока нас мало,
+				но скоро, путем постоянной агитации наши ряды непременно пополнятся :-)"
+	/>
+
+	<members>
+		<member
+			name   = "Michail &quot;mblsha&quot; Pishchagin"
+			nameRU = "Михаил &quot;мЫша&quot; Пищагин"
+
+			photo = "images/members/mblsha.png"
+			email = "mblsha@users.sourceforge.net"
+
+			desc   = "Lead developer, webdesigner, originator, etc. Propagandizes the 'open-source' idea."
+			descRU = "Главный разработчик, вебдизайнер, начинатель, и т.д. Пропагандирует идею 'open-source'."
+		>
+			<skills>
+				<ability	text   = "Basic (sic!)"
+						textRU = "Basic (sic!)"
+				/>
+				<ability	text   = "Pascal (I'm forced to know it)"
+						textRU = "Pascal (Я вынужден его знать)"
+				/>
+				<ability	text   = "C/C++"
+						textRU = "C/C++"
+				/>
+				<ability	text   = "PHP (a little)"
+						textRU = "PHP (немного)"
+				/>
+			</skills>
+		</member>
+		<member
+			name   = "Antoni &quot;n21&quot; Tsvetkoff"
+			nameRU = "Антон &quot;n21&quot; Цветков"
+
+			photo = "images/members/n21.png"
+			email = "n21@users.sourceforge.net"
+
+			desc   = ""
+			descRU = "Доблестный труженик бмд-фронта. Иногда умеет лениться, и не укладываться в дедлайн :-)"
+		>
+			<skills>
+				<ability	text   = "Pascal"
+						textRU = "Pascal"
+				/>
+				<ability	text   = "C/C++"
+						textRU = "C/C++"
+				/>
+				<ability	text   = "PHP"
+						textRU = "PHP"
+				/>
+				<ability	text   = "PERL"
+						textRU = "PERL"
+				/>
+				<ability	text   = "Assembler"
+						textRU = "Assembler"
+				/>
+			</skills>
+		</member>
+	</members>
+</about>

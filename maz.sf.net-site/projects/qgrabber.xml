@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="koi8-r"?>
+
+<project	name = "QGrabber"
+		nameRU = "QGrabber">
+		
+	<description	text = "An Allegro datafile is a bit like a zip file in that it consists of lots of
+different pieces of data stuck together one after another, and optionally
+compressed. This means that your game doesn't have to clutter up the disk
+with hundreds of tiny files, and it makes programming easier because you can
+load everything with a single function call at program startup. Another
+benefit is that the LZSS file compression algorithm works much better with
+one large file than with many small ones."
+
+			textRU = "An Allegro datafile is a bit like a zip file in that it consists of lots of
+different pieces of data stuck together one after another, and optionally
+compressed. This means that your game doesn't have to clutter up the disk
+with hundreds of tiny files, and it makes programming easier because you can
+load everything with a single function call at program startup. Another
+benefit is that the LZSS file compression algorithm works much better with
+one large file than with many small ones."
+	/>
+
+	<description	text = "Datafiles have the extension .dat, and can be created and edited with the
+graphical grabber program or the command line dat utility. They can be
+stored as separate files and loaded into memory by the load_datafile()
+function, or you can use dat2s to convert them into asm code which can then
+be linked directly into your executable."
+
+			textRU = "Datafiles have the extension .dat, and can be created and edited with the
+graphical grabber program or the command line dat utility. They can be
+stored as separate files and loaded into memory by the load_datafile()
+function, or you can use dat2s to convert them into asm code which can then
+be linked directly into your executable."
+	/>
+
+	<description	text = "QGrabber is Allegro-grabber clone. It is written with the help of great Qt library, and soon will have a ton of features."
+			textRU = "QGrabber -- это клон grabber'а. Он написан с использованием чудесной библиотеки Qt, и скоро будет иметь много-много фичей :)"
+	/>
+
+	<features>
+		<feature	text   = "Supports creation, loading and saving of datafiles"
+				textRU = "Поддерживает создание, загрузку и сохранение датафайлов"/>
+		<feature	text   = "File to load can be spacified via commandline parameter"
+				textRU = "Файл для загрузки может быть указан через параметры коммандной строки"/>
+		<feature	text   = "Original plugin system (has to be completely rewritten, though)"
+				textRU = "Оригинальная система плагинов (хотя она и должна быть полностью переписана)"/>
+		<feature	text   = "BMP, RLE, PAL and DATA plugins are built-in"
+				textRU = "Встроены BMP, RLE, PAL и DATA плагины"/>
+		<feature	text   = "Uses Qt 3.0, so i need some help to compile this under Windows"
+				textRU = "Использует Qt 3.0, так что мне нужна помощь, чтобы скомпилировать его под Windows"/>
+		<feature	text   = "It's just cool :-)"
+				textRU = "И просто это прикольная прога :-)"/>
+	</features>
+
+	<changes>
+		<version num = "0.0.4">
+			<change	text   = "Fixed RLE trans color"
+				textRU = "Исправлен прозрачный цвет RLE-спрайтов"/>
+			<change	text   = "Now it can load datafiles from commandline"
+				textRU = "Сейчас он может загружать датафайлы из коммандной строки"/>
+			<change	text   = "Datafile Saving"
+				textRU = "Сохранение датафайлов"/>
+			<change	text   = "Implemented Preferences dialog"
+				textRU = "Создан диалог настройки"/>
+			<change	text   = "Grabbed icons from KDE"
+				textRU = "Взял иконки из KDE"/>
+		</version>
+		<version num = "0.0.3">
+			<change	text   = "Windows port"
+				textRU = "Порт под Windows"/>
+			<change	text   = "Completely rewritten property-handling subsystem"
+				textRU = "Полностью переписана система обработки свойств"/>
+			<change	text   = "Contains BMP, RLE and PAL plugins"
+				textRU = "Содержит BMP, RLE и PAL плагины"/>
+			<change	text   = "Some other things"
+				textRU = "Еще кое-что"/>
+		</version>
+	</changes>
+
+	<screenshots>
+		<picture	desc     = "QGrabber's palette view"
+				descRU   = "Просмотр палитры"
+				filename = "images/screenshots/qgrabber/000.png"
+				thumb    = "images/screenshots/qgrabber/000_small.png"
+		/>
+		<picture	desc     = "QGrabber's image view"
+				descRU   = "Просмотр RLE-спрайта"
+				filename = "images/screenshots/qgrabber/001.png"
+				thumb    = "images/screenshots/qgrabber/001_small.png"
+		/>
+		<picture	desc     = "QGrabber's data view"
+				descRU   = "Просмотр данных"
+				filename = "images/screenshots/qgrabber/002.png"
+				thumb    = "images/screenshots/qgrabber/002_small.png"
+		/>
+	</screenshots>
+
+	<files version = "1.0">
+		<header	text   = "For Linux"
+			textRU = "Для Линукса"/>
+		<file	name = "qgrabber-0.0.4.tar.gz"
+			url  = "http://prdownloads.sourceforge.net/maz/qgrabber-0.0.4.tar.gz"
+			desc   = "Linux source and executable."
+			descRU = "Исполняемый файл и исходники для Ликукс."
+		/>
+		<file	name = "qgrabber-0.0.2.tar.gz"
+			url  = "http://prdownloads.sourceforge.net/maz/qgrabber-0.0.2.tar.gz"
+			desc   = "Linux source and executable. Volunteers may try to compile this under Windows"
+			descRU = "Исполняемый файл и исходники для Ликукс."
+		/>
+		<header	text   = "For Windows"
+			textRU = "Для Windows"/>
+		<file	name = "qt-2.3.0-inst.exe"
+			url  = "http://prdownloads.sourceforge.net/maz/qt-2.3.0-inst.exe"
+			desc   = "QGrabber needs this in order to run"
+			descRU = "Это нужно, чтобы QGrabber смог работать"
+		/>
+		<file	name = "qgrabber-0.0.3.exe"
+			url  = "http://prdownloads.sourceforge.net/maz/qgrabber-0.0.3.exe"
+			desc   = "Windows executable and sources"
+			descRU = "Исполняемый файл и исходники для Windows"
+		/>
+	</files>
+</project>

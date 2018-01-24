@@ -1,0 +1,53 @@
+body {
+	font-family: sans-serif;
+	font-size: 10pt;
+}
+
+.header {
+	font: bold;
+	font-size: 300%;
+}
+
+.footer {
+	font-size: 75%;
+}
+
+.menu {
+	font-size: 100%;
+}
+
+.content {
+	font-size: 120%;
+}
+
+.banners {
+	font-size: 40%;
+}
+
+div.tableEven {
+	background: #DDDDFF;
+	color: blue;
+}
+
+div.tableOdd {
+	background: #CCCCFF;
+	color: green;
+}
+
+/* Hyperlinks */
+a:link		{ font: bold;
+		  color: #4444aa;
+		  text-decoration: none; }
+
+a:visited	{ font: bold;
+		  color: #222288;
+		  text-decoration: none; }
+
+a:active	{ font: bold;
+		  color: Blue;
+		  text-decoration: underline; }
+
+a:hover		{ font: bold;
+		  color: #222288;
+		  text-decoration: underline; }
+
