@@ -1,0 +1,326 @@
+<!DOCTYPE UI><UI version="3.0" stdsetdef="1">
+<class>FontPlot</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>FontPlot</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>300</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Form4</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <property name="spacing">
+            <number>6</number>
+        </property>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>Layout2</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>fontInfo</cstring>
+                    </property>
+                    <property name="text">
+                        <string>fontInfo</string>
+                        <comment>this item doesn't need to be translated</comment>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name" stdset="0">
+                        <cstring>Spacer8</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </hbox>
+        </widget>
+        <widget class="QTabWidget">
+            <property name="name">
+                <cstring>TabWidget2</cstring>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>View</string>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <property name="margin">
+                        <number>11</number>
+                    </property>
+                    <property name="spacing">
+                        <number>6</number>
+                    </property>
+                    <widget class="FontView">
+                        <property name="name">
+                            <cstring>fontView</cstring>
+                        </property>
+                    </widget>
+                </vbox>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Edit</string>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <property name="margin">
+                        <number>11</number>
+                    </property>
+                    <property name="spacing">
+                        <number>6</number>
+                    </property>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>Layout4</cstring>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <property name="margin">
+                                <number>0</number>
+                            </property>
+                            <property name="spacing">
+                                <number>6</number>
+                            </property>
+                            <widget class="FontRangeSelect">
+                                <property name="name">
+                                    <cstring>rangeSelect</cstring>
+                                </property>
+                                <property name="sizePolicy">
+                                    <sizepolicy>
+                                        <hsizetype>5</hsizetype>
+                                        <vsizetype>5</vsizetype>
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                            </widget>
+                            <widget class="QLayoutWidget">
+                                <property name="name">
+                                    <cstring>Layout3</cstring>
+                                </property>
+                                <vbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <property name="margin">
+                                        <number>0</number>
+                                    </property>
+                                    <property name="spacing">
+                                        <number>6</number>
+                                    </property>
+                                    <widget class="QPushButton">
+                                        <property name="name">
+                                            <cstring>insertPushButton</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Import Range</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QPushButton">
+                                        <property name="name">
+                                            <cstring>deletePushButton</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Delete Range</string>
+                                        </property>
+                                    </widget>
+                                </vbox>
+                            </widget>
+                        </hbox>
+                    </widget>
+                    <widget class="FontRangeView">
+                        <property name="name">
+                            <cstring>rangeView</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>7</hsizetype>
+                                <vsizetype>7</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>10</verstretch>
+                            </sizepolicy>
+                        </property>
+                    </widget>
+                </vbox>
+            </widget>
+        </widget>
+    </vbox>
+</widget>
+<customwidgets>
+    <customwidget>
+        <class>FontView</class>
+        <header location="local">font.h</header>
+        <sizehint>
+            <width>-1</width>
+            <height>-1</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>5</hordata>
+            <verdata>5</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image0</pixmap>
+        <slot access="public" specifier="">setData(DATAFILE*)</slot>
+    </customwidget>
+    <customwidget>
+        <class>FontRangeView</class>
+        <header location="local">font.h</header>
+        <sizehint>
+            <width>-1</width>
+            <height>-1</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>7</hordata>
+            <verdata>7</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image0</pixmap>
+        <slot access="public" specifier="">rangeChanged(int)</slot>
+        <slot access="public" specifier="">setData(DATAFILE*)</slot>
+    </customwidget>
+    <customwidget>
+        <class>FontRangeSelect</class>
+        <header location="local">font.h</header>
+        <sizehint>
+            <width>-1</width>
+            <height>-1</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>7</hordata>
+            <verdata>1</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image0</pixmap>
+        <signal>selectionChanged(int)</signal>
+        <signal>updated()</signal>
+        <slot access="public" specifier="">setData(DATAFILE*)</slot>
+        <slot access="public" specifier="">updateList(int)</slot>
+        <slot access="public" specifier="">deleteRange()</slot>
+        <slot access="public" specifier="">importRange()</slot>
+    </customwidget>
+</customwidgets>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="45">789cd3d7528808f055d0d2e72a2e492cc94c5648ce482c52d04a29cdcdad8c8eb5ade6523250004143a55a6b2e0026630c4f</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>deletePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>rangeSelect</receiver>
+        <slot>deleteRange()</slot>
+    </connection>
+    <connection>
+        <sender>rangeSelect</sender>
+        <signal>selectionChanged(int)</signal>
+        <receiver>rangeView</receiver>
+        <slot>rangeChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>rangeSelect</sender>
+        <signal>updated()</signal>
+        <receiver>FontPlot</receiver>
+        <slot>updateInfo()</slot>
+    </connection>
+    <connection>
+        <sender>FontPlot</sender>
+        <signal>dataChanged(DATAFILE*)</signal>
+        <receiver>rangeSelect</receiver>
+        <slot>setData(DATAFILE*)</slot>
+    </connection>
+    <connection>
+        <sender>FontPlot</sender>
+        <signal>dataChanged(DATAFILE*)</signal>
+        <receiver>rangeView</receiver>
+        <slot>setData(DATAFILE*)</slot>
+    </connection>
+    <connection>
+        <sender>FontPlot</sender>
+        <signal>dataChanged(DATAFILE*)</signal>
+        <receiver>fontView</receiver>
+        <slot>setData(DATAFILE*)</slot>
+    </connection>
+    <connection>
+        <sender>FontPlot</sender>
+        <signal>dataChanged(DATAFILE*)</signal>
+        <receiver>FontPlot</receiver>
+        <slot>updateInfo()</slot>
+    </connection>
+    <connection>
+        <sender>insertPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>rangeSelect</receiver>
+        <slot>importRange()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="global" impldecl="in implementation">allegro/internal/aintern.h</include>
+    <include location="local" impldecl="in declaration">font.h</include>
+    <include location="local" impldecl="in declaration">alleg.h</include>
+    <include location="local" impldecl="in implementation">fontplot.ui.h</include>
+</includes>
+<variables>
+    <variable>DATAFILE *d</variable>
+</variables>
+<signals>
+    <signal>dataChanged(DATAFILE*)</signal>
+</signals>
+<slots>
+    <slot>setData(DATAFILE * dat, ObjectPlugin * plug)</slot>
+    <slot>updateInfo()</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

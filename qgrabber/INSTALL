@@ -1,0 +1,61 @@
+  QGrabber Installation Guide
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Contents:
+    1. Compiling
+       1.1 Linux specifics
+       1.2 Windows specifics
+       1.3 Common
+    2. Installing
+       2.1 Installing on Linux
+       2.2 Installing on Windows
+
+  1.1 Compiling QGrabber: Linux specifics
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    On Linux, there is expected liballeg-4.so file. If you haven't it yet,
+    create a symlink to existing shared allegro library.
+
+    Type (I assume, you will run it from `/usr/local/lib`):
+
+      % ln -s liballeg-4.0.2.so liballeg-4.so
+
+    Also, you'll need a symlink to `libaldat.a` which is in `allegro/lib/unix/`.
+
+      % ln -s <relative_path_to_allegro>/lib/unix/libaldat.a libaldat.a
+
+  1.2 Compiling QGrabber: Windows specifics
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    You will need `aldat.lib` in your library path. If you compiled Allegro
+    for yourself, you can find it in `allegro/lib/msvc/` directory.
+
+  1.3 Compiling QGrabber: Common
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Requirements:
+      - Qt 3.0.x    ( http://www.trolltech.com )
+      - Allegro 4.x ( http://alleg.sf.net )
+
+    To build QGrabber, type:
+
+      % qmake qgrabber.pro
+      % make
+
+    Everything should be ok, if not, chech your Qt and Allegro configuration.
+
+  2.1 Installing QGrabber: on Linux
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    If compile succeeds, or you've got binary distribution, type:
+
+      % su -c "./install.sh"
+
+  2.1 Installing QGrabber: on Windows
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    This section isn't  ready yet. I think, I'll make self-installing executable, and
+    distribute it. But I need to get some binary data first :)
+
+    Everyone who have Qt Commercial for Windows and is willing to help me to
+    mantain Windows port, please contact me.
+

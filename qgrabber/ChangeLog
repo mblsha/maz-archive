@@ -1,0 +1,106 @@
+5 october 2002
+  * Updated documentation
+  * Fixed compilation problem
+
+30 september 2002
+  * Ok, QGrabber now compiles on Windows too!
+  * Changed behaviour of IType plugin
+  * Bugfixes...
+
+7 september 2002
+  * new IType plugin
+  * MenuPlugins are now more flexible
+  * Made `Read Bitmap` and `View Bitmap` to be plugins
+
+3 september 2002
+  * Modifications to Image Plugin
+  * Added Read & View Bitmap
+  * Added `Grab from grid` and `Autocrop` plugins
+  * Added Sample and MIDI plugins
+  * *Factory::keys() are now sorted
+  * Changed icons to KDE HiColor theme. They can be now easily be customized by the end
+    user too.
+
+2 september 2002
+  * Menu Plugin system
+
+31 august 2002
+  * Drag'n'Drop!!! Now it is possible to easily move datafile items.
+
+28-31 august 2002
+  * Rewriting internal stuff
+
+25 august 2002
+  * Fixed bug in PropView
+  * Created Font Plugin
+
+23-24 august 2002
+  * New plugin system is now ready. And this is great :)
+  * Many-many changes inside
+
+21 august 2002
+  * Released version 0.0.5
+
+5 august 2002
+  * Some inner changes
+
+13 june 2002
+  * Implemented save progress dialog
+
+12 june 2002
+  * Released version 0.0.4
+
+18 may 2002
+  * Fixed statusbar state saving
+
+17 may 2002
+  * Added "About Qt" menu item
+  * Now it saves state of toolbar, and statusbar is
+    disabled by default (because it's quite useless)
+  * Fixed RLE trans color
+
+4 may 2002
+  * Preferences now can use QSettings (works only with Qt 3.x and higher)
+  * Added "Open nested datafiles on open" option
+
+3 may 2002
+  * Added style selector in preferences
+
+2 may 2002
+  * Now it can load datafiles from commandline
+  * Modifications to Save & Open dialogs
+  * Datafile Saving
+  * Implemented Preferences dialog
+  * Beginned russian translation
+
+28 april 2002
+  * Grabbed icons from KDE
+  * Bugfixes
+
+23 april 2002
+  * Windows version
+  * Fixed RLE-plugin bug
+  * Released QGrabber 0.0.3
+
+22 april 2002
+  * Rewrited Property-handling subsystem
+    Adding, Deleting & Modifying of properties is now available
+  * Some minor changes in plugins
+
+19 april 2002
+  * Added IoPAL
+  * Some modifications to ObjectPlugin & IOPlugin classes
+  * Grab & Export now fully works
+  * Added IoBMP & IoRLE
+  * "Item Adding" ability is now available
+
+17 april 2002
+  * Added ObjectPAL
+
+16 april 2002
+  * ObjectBMP now has ability to display bitmaps
+  * Added ObjectRLE
+  * "GrabberInfo" item is no longer displayed in DatafileView
+
+15 april 2002
+  * Released QGrabber 0.0.2

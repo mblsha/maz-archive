@@ -1,0 +1,205 @@
+<!DOCTYPE UI><UI version="3.0" stdsetdef="1">
+<class>PalettePlot</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>PalettePlot</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>561</width>
+            <height>297</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Form1</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <property name="spacing">
+            <number>6</number>
+        </property>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>Layout4</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>paletteInfo</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Palette</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name" stdset="0">
+                        <cstring>Spacer2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>Layout3</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <widget class="PaletteView">
+                    <property name="name">
+                        <cstring>paletteView</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>1</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>128</width>
+                            <height>128</height>
+                        </size>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>paletteNotInUse</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>5</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string>A different palette
+is currently in use.
+To select this one,
+double-click on it
+in the item list.</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name" stdset="0">
+                        <cstring>Spacer3_2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </hbox>
+        </widget>
+        <spacer>
+            <property name="name" stdset="0">
+                <cstring>Spacer3</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>20</width>
+                    <height>20</height>
+                </size>
+            </property>
+        </spacer>
+    </vbox>
+</widget>
+<customwidgets>
+    <customwidget>
+        <class>PaletteView</class>
+        <header location="local">palette.h</header>
+        <sizehint>
+            <width>-1</width>
+            <height>-1</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>0</hordata>
+            <verdata>0</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image0</pixmap>
+        <slot access="public" specifier="">setPalette(RGB*)</slot>
+    </customwidget>
+</customwidgets>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="680">789c4d90cb6e83301045f77c85157651d504884950d54f68d565a5aa0be3f104125e21e9a2aafaef9d6b03e98585cfe1da63b159abf7b717b5de44d79bb9d556d9ca8c6a4d5f6dfbfdf1f9fc13ad925cc99b262a593d44ab4765d56bdf39ac6359c75b1f2003d3223da405d002b324db667e631db0d05603ab8046934707d44617da0007606e6c1af00a3c6487645f02cf40b33389d901bb80e40a8f25d06a9b864106480e0fb007ba5ceb9dbfd52520394bc0534097ba1cd87a7445b2cf804720e79cb2ff3a7a6472c6029b80cc612ecdc8ecff9b249e23ebc519a4b465fcdf11e2c8c48bc339477186ca78725c49443ae7ecddd575c52722539e17c770526ce440ef98db96c5758c39de89e9c57137747ca166727d2fb21b0691234d7bdbc975dc4cbd476c86446beea128537c6beea1c87cf5adb1b9dfcff80e35cde2eeff4ab2fa7d8afe00d957af42</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>PalettePlot</sender>
+        <signal>paletteChanged(RGB*)</signal>
+        <receiver>paletteView</receiver>
+        <slot>setPalette(RGB*)</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="global" impldecl="in declaration">allegro.h</include>
+    <include location="local" impldecl="in implementation">prefs.h</include>
+    <include location="local" impldecl="in implementation">datedit.h</include>
+    <include location="local" impldecl="in implementation">paletteplot.ui.h</include>
+</includes>
+<signals>
+    <signal>paletteChanged(RGB*)</signal>
+</signals>
+<slots>
+    <slot>setPalette( RGB * pal )</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

@@ -1,0 +1,161 @@
+<!DOCTYPE UI><UI version="3.0" stdsetdef="1">
+<class>ImagePlotBase</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>ImagePlotBase</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>384</width>
+            <height>225</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Image plot</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <property name="spacing">
+            <number>6</number>
+        </property>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>Layout9</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>imageType</cstring>
+                    </property>
+                    <property name="text">
+                        <string>image type</string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>imageInfo</cstring>
+                    </property>
+                    <property name="text">
+                        <string>image info</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name" stdset="0">
+                        <cstring>Spacer3</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>TextLabel8</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Zoom:</string>
+                    </property>
+                </widget>
+                <widget class="QSpinBox">
+                    <property name="name">
+                        <cstring>zoom</cstring>
+                    </property>
+                    <property name="maxValue">
+                        <number>10</number>
+                    </property>
+                    <property name="minValue">
+                        <number>1</number>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="BitmapView">
+            <property name="name">
+                <cstring>bitmapView</cstring>
+            </property>
+        </widget>
+    </vbox>
+</widget>
+<customwidgets>
+    <customwidget>
+        <class>BitmapView</class>
+        <header location="local">bitmapview.h</header>
+        <sizehint>
+            <width>-1</width>
+            <height>-1</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>7</hordata>
+            <verdata>7</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image0</pixmap>
+        <signal>zoomChanged(int)</signal>
+        <slot access="public" specifier="">setBitmap(BITMAP *)</slot>
+        <slot access="public" specifier="">setZoom(int)</slot>
+    </customwidget>
+</customwidgets>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="4350">789c6dd6db6e22471006e0fb7d0ab475b78a6a87e30c8a72e1b3b18d0dc6e7281735c00036181b830d8ef2ee29bafeeac451961da1cf5dd35d5ddd3dc3cf1fa5bb4ebbf4e3e7b7b7a52c27fd527f2c8bd28fc16a36dbfcfec76f7f7efb5ea994b6ff936aa9f2fd976fdfbbcb52bf743e7f1e6ec185822a49254b8ae01c2ee0bebb9c044b70e196aab99a54827382d3b2dd7fbb7535a9a6d64eade8d09e4fe0cce2f3911bf1f3686b2fe002f16337e2c3f8d5c2e369c75db5fcf7cdb5c4daf9004e313f8ab6f66737ee1fc0c8977a5bd7126f278e0eed52837dfc9b68bb3ff45f2bea8999afdd35abe710f6fab01bf3fddcba9e783c37e114de8bb6f18e611f7fe5b6785a465b7b0217e8ef2adadab3e0c2e3e50ef6f699b981fc643fdae2cf61e42b87d1568f9ebb6ee3cf61cc9f87d136de811bf55fb851cf018cfdc221bf46e2fd4b01239eb368cbe7d25db7fe9fe102e30ddd984fdd9c62bf51d38df80a8cfd26afc1458afad01becfbab1c6df18f6ed4f304f67ab4dd767f2e30ce8f7cbab19f2ea36dbff5cd5982f8d48dfaed6e9d6afe0dabcf0e9cc1c77061966b73e6f548dd969fdcc07edebad1767f13f6f3b771e33c87f9a49a7f6afd89394b6cbd78ea46fb299ca27de36e58fb15ecf57c870be47b6f6ea21e72e1c6f9aac0bebe3db7f527b7b0cf27e49be97c53730df67a8edcd6ce4f7081f84373d3cffb18f6e7656e96c49e7754445bfcc88dfd3085333cefcb709198b368cbe765eb66cc871fdd99ade7d8ac7f31af61af77c31cf399b8b1df5218f592b51bf53f72637d2e617f5f8dcc7962f9d2be1bcf7fbb5fd7a7697e8333e4bb70a37d126dfdddc0d87f746e9604fb7f0fc6f382aae6dccf17b931df8e1bf349e014f92fdc98df039c617d5ad1d63fbb11df8eb6f62e8cf5a57f6ce3a13e7dd48fc3f35e747f593d2837eb5facff1d738ef32707b0afcf06f6fe1fdd386f6bb38f27ef6e3c1f1ab0d7e3cc8df50ce741b4de627e8db6f85d73eef94e607fdf7db8b13f67661f9fd0eee3cb991bfb71e0463cc6effb797f7023be03fbf378186df50ecf973ce9fbfbedcd6def2f7a82fdfd5689b6f80f37ea7fecc6fbea25dac6ab9a075eef5ab4b587f5c8357f3c4fe77081e769dd1ce3cb6e8cb78ab6fc7661fc1ea0eb68abd7bd1bbf07c2ef95bece1febbb82fd79d372db7af3b9d9ef9765b48d3f76e3fc7660d497dbd1d65fe2b6fd41a730f60b87fdd02f06fe3cb8725b7e74611efafb681a6df30deff381f66ff3a317736c1fb8ad3fc9dd88bf8353d4e3d48df31ad667a0e3e576ff13eced7bd136df1337eaf9007b7eb7d156cff0fb6198b8293a3737605f9fb0bec362a8276cebee72fb6162e19cfb7afddff7c0a22c9e875cf088c73cd1eb919ffe758df433e5193feb3df3189ff30bbff242db5ef88d97bce277fee0356ff893777857e3f7789ffb16cf071a77c8477cacb12d3ee1533ee3369ff30577b8cb97dce32bbee61bbe650af1a2592cb4a73bbee7074eb8cc15ae728debfadde094336e72939888f3105ff0848472ead38086dca0824634a6093dd293c637684a337ae61b9a733fc4f7b5ff3b8d7ea1575ad01b2d6915ae19bdd307adf5b3a14fed7f27f6ff48bbb4c715daa7035aead8dbeb90bb7ad746a38fb497638d6f215e34fe844ee98cdab1ef73baa04eb8a3d08cba7449bd2ffd5fd1b5f6ee7ddfd02dddd13d3d504265ed7f4d95d0bfe7ff48032e53157dd7a84e0dad699952caa8a9d15dd1e5d7f9c6fef98c3a42dbbe452417ad14b765204375a1e3ae65f4357f196bfb8456a277ca934c7515ea5c95990ce5799b3fa75ff397b9c6bfc8ab2ce44d96b29277f9d0152bebb7d64736f2f925ff27d9d1b65dd9937dedf180bb72284772bc5de16dfda525275ff21fc9a99ce96abd4a5bce51a3a55c48274477e5f23ff59ff2aef434cf353784e54aaee586525987b5ed6a3623b9d5fc5bb1ff19f7e44eeec35aeaa5771e21f2417369e9bbb92c15a922ff81d4747f5f6bedeab25dcb35aeaeb4682ca94667d2cc3927dbcfe1bcecebfeeb856b980b4df3edbf3e0fa5a69b78a0d1c3bce0229e2fdda9f98888e6b4836b1ebf5bd4cac7f9c4cef097f35e68650bfdfbff7d1fe0bcfff5ebb7bf0198b9e0b4</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>zoom</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>bitmapView</receiver>
+        <slot>setZoom(int)</slot>
+    </connection>
+    <connection>
+        <sender>bitmapView</sender>
+        <signal>zoomChanged(int)</signal>
+        <receiver>zoom</receiver>
+        <slot>setValue(int)</slot>
+    </connection>
+    <connection>
+        <sender>ImagePlotBase</sender>
+        <signal>bitmapChanged(BITMAP*)</signal>
+        <receiver>bitmapView</receiver>
+        <slot>setBitmap(BITMAP*)</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in declaration">alleg.h</include>
+    <include location="local" impldecl="in implementation">imageplotbase.ui.h</include>
+</includes>
+<signals>
+    <signal>bitmapChanged(BITMAP*)</signal>
+</signals>
+<slots>
+    <slot>setType( const QString &amp; type )</slot>
+    <slot>setBitmap( BITMAP * bmp, bool hasAlpha )</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>
