@@ -31,7 +31,7 @@
 
 #include "ated.h"
 
-void DoFloodFill(int mx, int my) 
+void DoFloodFill(int mx, int my)
 {
    #define NUMSPORES    50000
    int obx[NUMSPORES], oby[NUMSPORES];
@@ -47,19 +47,19 @@ void DoFloodFill(int mx, int my)
    unsigned ptr, newoff;
    int vectx[4] = {0, 1, 0, -1}, vecty[4]={-1, 0, 1, 0};
 
-   if ((mouse_b & 2) || key[KEY_LCONTROL] || key[KEY_RCONTROL]) 
+   if ((mouse_b & 2) || key[KEY_LCONTROL] || key[KEY_RCONTROL])
    {
       copy_fill = TRUE;
    }
 
-   if (copy_fill && !TileCopy.x && !TileCopy.y && !TileCopy.w && !TileCopy.h) 
+   if (copy_fill && !TileCopy.x && !TileCopy.y && !TileCopy.w && !TileCopy.h)
    {
       ated_alert ("Hey!","I can't use CopyFill mode", "without the source!", "Oops", 0, 0, 0);
       FillMode = 0;
       return;
    }
 
-   if (((abs(planeton) + abs(planemon) + abs(planeion)) > 1)) 
+   if (((abs(planeton) + abs(planemon) + abs(planeion)) > 1))
    {
       ated_alert("I will only allow Flood Filling",
                  "one plane at a time; you have",
@@ -80,7 +80,7 @@ void DoFloodFill(int mx, int my)
    used = 1;
    highest = 1;
 
-   if ((obx[0] < 0) || (oby[0] < 0) || (obx[0] > width) || (oby[0] > height)) 
+   if ((obx[0] < 0) || (oby[0] < 0) || (obx[0] > width) || (oby[0] > height))
    {
       FillMode = 0;
       return;
@@ -96,7 +96,7 @@ void DoFloodFill(int mx, int my)
 
    if (((Ton ? (which_t  == org_t) : 0) ||
         (Mon ? (which_tm == org_m) : 0) ||
-        (Ion ? (which_i  == org_i) : 0)) && !copy_fill) 
+        (Ion ? (which_i  == org_i) : 0)) && !copy_fill)
    {
       FillMode = 0;
       return;
@@ -110,7 +110,7 @@ void DoFloodFill(int mx, int my)
    UndoRegion.w = mapwidth;
    UndoRegion.h = mapheight;
 
-   if (copy_fill) 
+   if (copy_fill)
    {
       unsigned from = (TileCopy.y + (my % TileCopy.h))*mapwidth + TileCopy.x + (mx % TileCopy.w);
 
@@ -118,27 +118,27 @@ void DoFloodFill(int mx, int my)
       Mon = (TileCopy.fore && planemon);
       Ion = (TileCopy.info && planeion);
 
-      if (TileCopy.MapOrTileSelect) 
+      if (TileCopy.MapOrTileSelect)
       {
          //
          // From TileSelect
          //
          unsigned loc = (TileCopy.y * TileCopy.tile_select_w) + TileCopy.x;
 
-         if(Ton) 
+         if(Ton)
          {
             new_t = (loc < gfx_t_count) ? loc : 0;
          }
-         if(Mon) 
+         if(Mon)
          {
             new_m = (loc < gfx_tm_count) ? loc : 0;
          }
-         if(Ion) 
+         if(Ion)
          {
             new_i = (loc < gfx_i_count) ? loc : 0;
          }
       }
-      else 
+      else
       {
          //
          // From Copy Buffer
@@ -147,8 +147,8 @@ void DoFloodFill(int mx, int my)
          new_m = CutFrgnd [from];
          new_i = CutInfoPl[from];
       }
-   } 
-   else 
+   }
+   else
    {
       new_t = which_t;
       new_m = which_tm;
@@ -159,14 +159,14 @@ void DoFloodFill(int mx, int my)
    if (Mon) MapFrgnd [newoff] = new_m;
    if (Ion) MapInfoPl[newoff] = new_i;
 
-   do 
+   do
    { // while(used)
-      for (i = 0;i <= highest; i++) 
+      for (i = 0;i <= highest; i++)
       {
          //
          // SEE IF SPORE EXISTS
          //
-         if (obx[i] != -1) 
+         if (obx[i] != -1)
          {
             //
             // FREE THIS SPORE
@@ -180,28 +180,28 @@ void DoFloodFill(int mx, int my)
             // SEARCH 4 QUADRANTS FOR A SPORE TO FILL
             // (ONLY 4 QUADS SO WE DON'T FILL THRU DIAGONALS)
             //
-            if (!copy_fill) 
+            if (!copy_fill)
             {
                //
                // Normal Fill mode
                //
-               for (j = 0; j < 4; j++) 
+               for (j = 0; j < 4; j++)
                {
                   newoff=(my + vecty[j])*mapwidth + mx + vectx[j];
 
                   if ((Ton ? (MapBkgnd [newoff] == org_t) : 1) &&
                       (Mon ? (MapFrgnd [newoff] == org_m) : 1) &&
-                      (Ion ? (MapInfoPl[newoff] == org_i) : 1)) 
+                      (Ion ? (MapInfoPl[newoff] == org_i) : 1))
                   {
 
-                     for (k = 0; k < NUMSPORES; k++) 
+                     for (k = 0; k < NUMSPORES; k++)
                      {
-                        if (obx[k] == -1) 
+                        if (obx[k] == -1)
                         {
                            obx[k] = mx + vectx[j];
                            oby[k] = my + vecty[j];
 
-                           if ((obx[k] < 0) || (obx[k] > width) || (oby[k] < 0) || (oby[k] > height)) 
+                           if ((obx[k] < 0) || (obx[k] > width) || (oby[k] < 0) || (oby[k] > height))
                            {
                               obx[k] = -1;
                               break;
@@ -212,10 +212,10 @@ void DoFloodFill(int mx, int my)
                            if (Ton) MapBkgnd [newoff] = which_t;
                            if (Mon) MapFrgnd [newoff] = which_tm;
                            if (Ion) MapInfoPl[newoff] = which_i;
-   
+
 		                     DirtyFlag=1;
 
-		                     if (k > highest) 
+		                     if (k > highest)
                            {
 		                        highest = k;
 		                        break;
@@ -224,20 +224,20 @@ void DoFloodFill(int mx, int my)
 	                  } // for (k)
 
 	                  if (key[KEY_ESC])    // ESC OUT
-                     {  
+                     {
 	                     while(key[KEY_ESC]);
 
 	                     goto done;
 	                  }
 	               } // if
                } // for (j)
-            } 
-            else 
+            }
+            else
             {
                //
                // Copy Fill mode
                //
-	            for (j = 0; j < 4; j++) 
+	            for (j = 0; j < 4; j++)
                {
 	               unsigned from;
 
@@ -248,16 +248,16 @@ void DoFloodFill(int mx, int my)
 
                   if ((Ton ? (MapBkgnd [newoff] == org_t) : 1) &&
                       (Mon ? (MapFrgnd [newoff] == org_m) : 1) &&
-                      (Ion ? (MapInfoPl[newoff] == org_i) : 1)) 
+                      (Ion ? (MapInfoPl[newoff] == org_i) : 1))
                   {
-                     for (k = 0; k < NUMSPORES; k++) 
+                     for (k = 0; k < NUMSPORES; k++)
                      {
-                        if (obx[k] == -1) 
+                        if (obx[k] == -1)
                         {
                            obx[k] = nx;
                            oby[k] = ny;
 
-                           if ((obx[k] < 0) || (obx[k] > width) || (oby[k] < 0) || (oby[k] > height)) 
+                           if ((obx[k] < 0) || (obx[k] > width) || (oby[k] < 0) || (oby[k] > height))
                            {
                               obx[k] = -1;
                               break;
@@ -269,7 +269,7 @@ void DoFloodFill(int mx, int my)
                            Mon = TileCopy.fore;
                            Ion = TileCopy.info;
 
-                           if(!TileCopy.MapOrTileSelect) 
+                           if(!TileCopy.MapOrTileSelect)
                            {
                               //
                               // From Map
@@ -278,7 +278,7 @@ void DoFloodFill(int mx, int my)
                               new_m = CutFrgnd[from];
                               new_i = CutInfoPl[from];
                            }
-                           else 
+                           else
                            {
                               //
                               // From TileSelect
@@ -298,7 +298,7 @@ void DoFloodFill(int mx, int my)
 
                            DirtyFlag = 1;
 
-                           if(k > highest) 
+                           if(k > highest)
                            {
                               highest = k;
 		                        break;
@@ -306,7 +306,7 @@ void DoFloodFill(int mx, int my)
 	                     } // if (obx[k] == -1)
 
 	                     if (key[KEY_ESC])    // ESC OUT
-                        {    
+                        {
    	                     while(key[KEY_ESC]);
 	                        goto done;
 	                     }
@@ -340,7 +340,7 @@ void RestoreUndo(void) {
   }
 }
 
-void CopyUndoRegion() 
+void CopyUndoRegion()
 {
    if(UndoRegion.x == -1)
       return;
@@ -348,13 +348,13 @@ void CopyUndoRegion()
    SaveUndo(UndoRegion.x, UndoRegion.y, UndoRegion.w, UndoRegion.h);
 }
 
-void SaveUndo(int xx, int yy, int w, int h) 
+void SaveUndo(int xx, int yy, int w, int h)
 {
    unsigned x, y, loc;
 
-   for (y = yy; y < (yy + h); y++)  
+   for (y = yy; y < (yy + h); y++)
    {
-      for(x = xx; x < (xx + w); x++) 
+      for(x = xx; x < (xx + w); x++)
       {
          loc = (y * mapwidth) + x;
 
